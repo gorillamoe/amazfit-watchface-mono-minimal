@@ -1,0 +1,41 @@
+{
+  "configVersion": "v3",
+  "app": {
+    "appId": 1134457,
+    "appName": "Mono Minimal",
+    "appType": "watchface",
+    "version": { "code": 1, "name": "1.0.0" },
+    "vender": "Independent",
+    "description": "Monochrome, minimalist Active Max watch face.",
+    "icon": "images/preview.png"
+  },
+  "permissions": ["data:user.hd.heart_rate", "data:user.hd.step"],
+  "runtime": {
+    "apiVersion": { "compatible": "4.0", "target": "4.2", "minVersion": "4.0" }
+  },
+  "targets": {
+    "active-max": {
+      "module": {
+        "watchface": {
+          "path": "watchface/active-max/index",
+          "main": 1,
+          "editable": 0,
+          "lockscreen": 0
+        }
+      },
+      "platforms": [
+        { "name": "Amazfit Active Max", "deviceSource": 10813697 },
+        { "name": "Amazfit Active Max", "deviceSource": 10813699 }
+      ],
+      "designWidth": 480
+    }
+  },
+  "i18n": {
+    "en-US": { "name": "Mono Minimal" },
+    "de-DE": { "name": "Mono Minimal" },
+    "zh-CN": { "name": "Mono Minimal" },
+    "zh-TW": { "name": "Mono Minimal" }
+  },
+  "defaultLanguage": "en-US",
+  "debug": false
+}

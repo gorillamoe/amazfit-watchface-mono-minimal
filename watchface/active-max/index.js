@@ -137,6 +137,13 @@ WatchFace({
     face.time.onPerDay(face.updateDate);
   },
 
+  onChange() {
+    if (this.battery && this.updateBattery) this.updateBattery();
+    if (this.heart && this.updateHeart) this.updateHeart();
+    if (this.step && this.updateSteps) this.updateSteps();
+    if (this.time && this.updateDate) this.updateDate();
+  },
+
   onDestroy() {
     if (this.battery && this.updateBattery)
       this.battery.offChange(this.updateBattery);
